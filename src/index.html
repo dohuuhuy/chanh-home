@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="Head"></head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="Navbar"></div>
+
+    <!-- Banner -->
+    <div id="Banner"></div>
+
+    <!-- Main content -->
+    <div id="MainContent"></div>
+
+    <!-- Footer -->
+    <div id='Footer'></div>
+</body>
+
+<!-- Core JS  -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+<script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+<!-- Quick JS -->
+<script src="assets/js/quick-website.js"></script>
+<!-- Feather Icons -->
+<script>
+    feather.replace({
+        width: "1em",
+        height: "1em",
+    });
+</script>
+
+<!-- Import component -->
+<script>
+    $(() => $("#Head").load("./component/Organisms/Head.html"))
+    $(() => $("#Navbar").load("./component/Organisms/Navbar.html"))
+    $(() => $("#Banner").load("./component/Organisms/Banner.html"))
+    $(() => $("#MainContent").load("./component/MainContent/Home/index.html"));
+    $(() => $("#Footer").load("./component/Organisms/Footer.html"))
+</script>
+
+
+</html>
