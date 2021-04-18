@@ -1,33 +1,10 @@
-<section class="slice py-0">
+<section class="slice py-0 mt-6">
     <div class="container">
         <div class="row row-grid align-items-center">
             <div class="col-12 col-md-5 col-lg-6 order-md-2">
                 <div class="text-center d-flex justify-content-center mt-4">
-                    <ul
-                        class="list-group d-flex flex-row flex-wrap row text-capitalize text-center w-80  p-2  hover-shadow shadow-white">
-                        <li class="w-50 mb-3 shadow-success hover-translate-y-n10 hover-shadow-lg">
-                            <a>
-                                <image height="42px" src="assets/img/boxService/box.png" />
-                                <p class="pt-1 ">Theo dõi đơn hàng</p>
-                            </a>
-                        </li>
-                        <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg"><a>
-                                <image height="42px" src="assets/img/boxService/customer.png" />
-                                <p class="pt-1">Track customized ID</p>
-                            </a>
-                        </li>
-                        <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
-                            <a>
-                                <image height="42px" src="assets/img/boxService/fees.png" />
-                                <p class="pt-1">Ước tính chi phí</p>
-                            </a>
-                        </li>
-                        <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
-                            <a>
-                                <image height="42px" src="assets/img/boxService/location.png" />
-                                <p class="pt-1">Vị trí</p>
-                            </a>
-                        </li>
+                    <ul id="listBoxService"
+                        class="card shadow-lg border-0 list-group d-flex flex-row flex-wrap row text-capitalize text-center w-80 p-2">
                     </ul>
                 </div>
                 <!-- Image -->
@@ -57,10 +34,42 @@
                         <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
                     </a>
                     <a href="/src/gioi-thieu.html" class="btn btn-neutral btn-icon d-none d-lg-inline-block"
-                        target="_blank">Về chúng
-                        tôi</a>
+                        target="_blank">Về chúng tôi</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    const ul = document.getElementById("listBoxService");
+    const listBoxService = [
+        {
+            url_img: "assets/img/boxService/box.png",
+            title: "Theo dõi đơn hàng",
+        },
+        {
+            url_img: "assets/img/boxService/customer.png",
+            title: "Track customized ID",
+        },
+        {
+            url_img: "assets/img/boxService/fees.png",
+            title: "Ước tính chi phí",
+        },
+        {
+            url_img: "assets/img/boxService/location.png",
+            title: "Vị trí",
+        },
+    ];
+    let html = "";
+    listBoxService.map(({ url_img, title }, i) => {
+        html += `
+                <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
+                    <a>
+                        <image height="42px" src="${url_img}" />
+                        <p class="mt-1 p-2">${title}</p>
+                    </a>
+                </li>`;
+        return (ul.innerHTML = html);
+    });
+</script>
