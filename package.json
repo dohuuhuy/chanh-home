@@ -1,12 +1,11 @@
 {
     "private": true,
-    "name": "quick-website-ui-kit-demo",
+    "name": "chanh-home",
     "version": "1.0.0",
-    "description": "Here comes your description...",
+    "description": "Trang chủ",
     "main": "gulpfile.js",
-    "repository": "https://github.com/webpixels/quick-website-ui-kit-demo",
     "keywords": [],
-    "author": "Webpixels",
+    "author": "HuYi",
     "license": "ISC",
     "devDependencies": {
         "browser-sync": "^2.26.7",
