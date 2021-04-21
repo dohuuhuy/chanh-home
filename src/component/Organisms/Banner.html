@@ -1,10 +1,10 @@
-<section class="slice py-0 mt-6">
+<section style="height: calc(100vh - 6rem);" class="slice py-0 mt-6">
     <div class="container">
         <div class="row row-grid align-items-center">
             <div class="col-12 col-md-5 col-lg-6 order-md-2">
                 <div class="text-center d-flex justify-content-center mt-4">
                     <ul id="listBoxService"
-                        class="card shadow-lg border-0 list-group d-flex flex-row flex-wrap row text-capitalize text-center w-80 p-2">
+                        class=" shadow-lg border-0 list-group d-flex flex-row flex-wrap  text-capitalize text-center w-80 p-2">
                     </ul>
                 </div>
                 <!-- Image -->
@@ -31,7 +31,6 @@
                 <div class="text-center text-md-left mt-5">
                     <a href="" class="btn btn-primary btn-icon" target="_blank">
                         <span class="btn-inner--text">Đăng ký đối tác</span>
-                        <span class="btn-inner--icon"><i data-feather="chevron-right"></i></span>
                     </a>
                     <a href="/src/gioi-thieu.html" class="btn btn-neutral btn-icon d-none d-lg-inline-block"
                         target="_blank">Về chúng tôi</a>
@@ -47,29 +46,62 @@
         {
             url_img: "assets/img/boxService/box.png",
             title: "Theo dõi đơn hàng",
+            slug: "theo-doi-don-hang",
         },
         {
             url_img: "assets/img/boxService/customer.png",
             title: "Track customized ID",
+            slug: "track-cus-id",
         },
         {
             url_img: "assets/img/boxService/fees.png",
             title: "Ước tính chi phí",
+            slug: "uoc-tinh-chi-phi",
         },
         {
             url_img: "assets/img/boxService/location.png",
             title: "Vị trí",
+            slug: "vi-tri",
         },
     ];
-    let html = "";
-    listBoxService.map(({ url_img, title }, i) => {
-        html += `
-                <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
-                    <a>
+    let html_service = "";
+    listBoxService.map(({ url_img, title, slug }, i) => {
+        html_service += `
+                <li key="${i}" class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
+                    <a href="${slug}" class="text-dark">
                         <image height="42px" src="${url_img}" />
                         <p class="mt-1 p-2">${title}</p>
                     </a>
                 </li>`;
-        return (ul.innerHTML = html);
+        return (ul.innerHTML = html_service);
     });
 </script>
+
+<!-- Thẻ Li nguyên mẫu -->
+
+<!-- <ul class="card shadow-lg border-0 list-group d-flex flex-row flex-wrap row text-capitalize text-center w-80 p-2">
+    <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
+        <a>
+            <image height="42px" src="assets/img/boxService/box.png" />
+            <p class="mt-1 p-2">Theo dõi đơn hàng</p>
+        </a>
+    </li>
+    <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
+        <a>
+            <image height="42px" src="assets/img/boxService/customer.png" />
+            <p class="mt-1 p-2">Track customized ID</p>
+        </a>
+    </li>
+    <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
+        <a>
+            <image height="42px" src="assets/img/boxService/fees.png" />
+            <p class="mt-1 p-2">Ước tính chi phí</p>
+        </a>
+    </li>
+    <li class="w-50 mb-3 hover-translate-y-n10 hover-shadow-lg">
+        <a>
+            <image height="42px" src="assets/img/boxService/location.png" />
+            <p class="mt-1 p-2">Vị trí</p>
+        </a>
+    </li>
+</ul> -->

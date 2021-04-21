@@ -58,3 +58,51 @@
         </div>
     </div>
 </section>
+
+<script>
+    const support = document.getElementById("ListSupport");
+    const listSupport = [
+        {
+            icon: '',
+            title: "Chăm sóc khách hàng",
+            description: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
+            contact: "project@example.com",
+        },
+        {
+            icon: '',
+            title: "Hổ trợ kỹ thuật",
+            description: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
+            contact: "project@example.com",
+        },
+        {
+            icon: '',
+            title: "Cài đặt tài khoản",
+            description: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
+            contact: "project@example.com",
+        },
+
+    ];
+    let html_support = "";
+    listSupport.map(({ title, description, contact }, i) => {
+        html_support += `
+               <div class="col-lg-4">
+                <div class="card text-center hover-translate-y-n10 hover-shadow-lg">
+                    <div class="px-5 pb-5 pt-5">
+                        <div class="py-4">
+                            <div class="icon text-warning icon-sm mx-auto">
+                                <i data-feather="users"></i>
+                            </div>
+                        </div>
+                        <h5 class="">${title}</h5>
+                        <p class="mt-2 mb-0">
+                            ${description}
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="link-underline-warning">${contact}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        return (support.innerHTML = html_service);
+    });
+</script>

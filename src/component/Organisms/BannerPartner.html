@@ -1,0 +1,70 @@
+<section style="background-image: url(assets/img/backgrounds/img-1.jpg) ; height: calc(100vh - 6rem);"
+    class="slice py-0 mt-6">
+    <div class="container">
+        <div class="row row-grid">
+            <div class="col-12 col-md-5 col-lg-4 order-md-2 justify-content-end">
+                <!-- list service box -->
+                <div class="card text-center bg-transparent border-0 m-0">
+                    <div class="card-body px-0">
+                        <ul id="listBoxService" style="background-color: hsla(0,0%,100%,.9)"
+                            class="shadow-lg border-0 list-group d-flex flex-row flex-wrap  text-capitalize text-center">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-8 order-md-1 d-flex align-items-center h-100vh">
+                <!-- card intro -->
+                <div class="card w-75 border-0 " style="background-color: hsla(0, 0%, 100%, 0.3)">
+                    <div class="card-body">
+                        <h4 class="card-title"><a>Card title</a></h4>
+                        <p class="card-text text-dark">
+                            Some quick example text to build on the card title and make up the
+                            bulk of the card's content.
+                        </p>
+                        <a href="#" class="text-primary text-underline--dashed">
+                            Đăng ký trở thành đối tác
+                            <i data-feather="arrow-right" class="ml-2" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const ul = document.getElementById("listBoxService");
+    const listBoxService = [
+        {
+            url_img: "assets/img/boxService/box.png",
+            title: "Theo dõi đơn hàng",
+            slug: "theo-doi-don-hang",
+        },
+        {
+            url_img: "assets/img/boxService/customer.png",
+            title: "Track customized ID",
+            slug: "track-cus-id",
+        },
+        {
+            url_img: "assets/img/boxService/fees.png",
+            title: "Ước tính chi phí",
+            slug: "uoc-tinh-chi-phi",
+        },
+        {
+            url_img: "assets/img/boxService/location.png",
+            title: "Vị trí",
+            slug: "vi-tri",
+        },
+    ];
+    let html_service = "";
+    listBoxService.map(({ url_img, title, slug }, i) => {
+        html_service += `
+                <li key="${i}" class="w-50 hover-translate-y-n10 hover-shadow-lg small font-weight-bolder my-2 py-2">
+                    <a href="${slug}" class="text-dark">
+                        <image height="42px" src="${url_img}" />
+                        <div class="p-2">${title}</div>
+                    </a>
+                </li>`;
+        return (ul.innerHTML = html_service);
+    });
+</script>
