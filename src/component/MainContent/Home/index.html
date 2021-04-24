@@ -1,7 +1,7 @@
-<section class="slice slice-lg pt-lg-3 pb-0 pb-lg-3">
+<section class="">
     <div class="container">
         <div class="row justify-content-lg-end">
-            <div class="col-lg-5 text-lg-right">
+            <div class="col-lg-5 text-lg-right text-center text-md-right">
                 <h6 class="display-4 text-danger">99+</h6>
                 <p class="lh-180 mb-3">
                     Đã tin dùng, Ngay bây giờ bạn hãy tạo đơn hàng, theo dõi đơn hàng, có
@@ -10,16 +10,16 @@
                 </p>
             </div>
             <div class="col-lg-6">
-                <h3 class="display-4 lh-130">Trải nghiệm trên thiết bị của bạn</h3>
+                <h3 class="display-4 lh-130 text-center text-md-left">Trải nghiệm trên thiết bị của bạn</h3>
                 <div>
-                    <ul class="list-inline">
+                    <ul class="list-inline d-flex justify-content-center justify-content-md-start">
                         <li class="list-inline-item hover-translate-y-n10">
-                            <a>
+                            <a href=''>
                                 <img src="assets/img/download/ios.svg" alt="ios" />
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a>
+                            <a href=''>
                                 <img src="assets/img/download/android.svg" alt="android" />
                             </a>
                         </li>
@@ -81,14 +81,16 @@
 </section>
 
 <!-- Đối tác -->
-<section class="slice slice-lg">
+<section class="">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <span class="badge badge-primary badge-pill">Đối tác</span>
-                <h5 class="lh-180 mt-4 mb-sm-2 mb-lg-6">
-                    Các đối tác đã hợp tác và cùng phát triển với Chanh8
-                </h5>
+            <div class="col-lg-7">
+                <h3 class="h2-responsive bg-warning w-50 rounded-top text-center text-white text-capitalize">
+                    Đối tác
+                </h3>
+                <h4 class="mt-4 ">
+                    Hợp tác và phát triển cùng với <strong>Chanh8</strong> <br />
+                </h4>
             </div>
         </div>
         <!-- List Partner -->
@@ -107,7 +109,11 @@
     </div>
 </section>
 
+
+
+
 <script>
+
     const partner = document.getElementById("listPartner");
     const listPartner = [
         {
@@ -175,12 +181,12 @@
     listPartner?.map(({ url_img, title }, i) => {
         html_partner += `
             <div key='${i}' class="col-lg-4 col-md-6 px-lg-4">
-                <div class="card shadow-none hover-translate-y-n10">
+                <div class="card shadow-none hover-translate-y-n10 hover-shadow-lg">
                     <div class="p-3 d-flex text-center">
                         <div class="w-50 ">
                             <image height="50" src='${url_img}' />
                         </div>
-                        <div class="w-50">
+                        <div class="w-50 m-auto">
                             <span class="h6">${title}</span>
                         </div>
                     </div>

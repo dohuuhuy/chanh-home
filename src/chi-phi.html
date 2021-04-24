@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="Head"></head>
+
+<body id="page-top">
+    <!-- Navbar -->
+    <div id="Navbar"></div>
+
+    <!-- Banner -->
+    <div id="Banner"></div>
+
+    <!-- Main content -->
+    <div id="MainContent"></div>
+
+
+    <!-- Footer -->
+    <div id="Footer"></div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <style>
+        .scroll-to-top {
+            position: fixed;
+            z-index: 200;
+            right: 0rem;
+            bottom: 0;
+            width: 2.75rem;
+            height: 2.75rem;
+            text-align: center;
+            color: #fff;
+            background: #ffbe3d;
+            line-height: 46px;
+        }
+
+        .scroll-to-top:focus,
+        .scroll-to-top:hover {
+            color: white;
+        }
+
+        .scroll-to-top:hover {
+            background: #5a5c69;
+        }
+
+        .scroll-to-top i {
+            font-weight: 800;
+        }
+    </style>
+</body>
+
+<!-- Core JS  -->
+<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+<script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+<!-- Page JS -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1oALsXLX-XEh2iYbE8tOjxsdFNHE39WM"></script>
+<!-- Quick JS -->
+<script src="assets/js/quick-website.js"></script>
+<!-- Feather Icons -->
+<script>
+    feather.replace({
+        width: "1em",
+        height: "1em",
+    });
+</script>
+
+<script>
+    Head;
+    $(() => $("#Head").load("./component/Organisms/Head.html"));
+    $(() => $("#Navbar").load("./component/Organisms/Navbar.html"));
+    $(() => $("#Banner").load("./component/Organisms/BannerFAQ.html"));
+    $(() =>
+        $("#MainContent").load("./component/MainContent/ChiPhi/index.html")
+    );
+    $(() => $("#Footer").load("./component/Organisms/FooterFAQ.html"));
+</script>
+
+</html>
