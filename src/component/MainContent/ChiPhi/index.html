@@ -1,39 +1,208 @@
 <!-- Ước tính chi phí -->
-<section class="slice slice-lg">
+<section class="slice slice-md">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 text-center d-flex align-center">
-                <h3 class="h2-responsive bg-success w-50 rounded-top text-center text-white text-capitalize">
-                    Ước tính chi phí
-                </h3>
-            </div>
             <div class="col-lg-12">
-                <ul class="nav nav-pills nav-fill mb-3" id="tabs_2" role="tablist">
+                <ul class="nav nav-pills nav-fill suss mb-3" id="tabs_2" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tabs_2_1" role="tab"
                             aria-controls="home" aria-selected="true">
-                            <span class="nav-link-icon d-block"><i class="fab fas fa-truck fa-2x"></i></span>
-                            <span class="d-none d-sm-block mt-3">Nội thành</span>
+                            <i class="fab fas fa-truck fa-2x"></i>
+                            <span class="d-none d-sm-block mt-3">Chi phí vận chuyển nội thành</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabs_2_2" role="tab"
                             aria-controls="profile" aria-selected="false">
                             <span class="nav-link-icon d-block"><i class="fas fa-truck-moving fa-2x"></i></span>
-                            <span class="d-none d-sm-block mt-3">Liên tỉnh</span>
+                            <span class="d-none d-sm-block mt-3">Chi phí vận chuyển liên tỉnh</span>
                         </a>
                     </li>
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tabs_2_1" role="tabpanel" aria-labelledby="home-tab">
-                        <img class='img-fluid' src="assets/img/fee/uoctinhgia.png" />
+                        <div class="container bg-dark-success">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="form-inline my-3 d-flex justify-content-lg-between">
+
+                                        <div class="input-group mb-1 mb-sm-1  mb-md-0">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">Từ</div>
+                                            </div>
+                                            <input type="email" class="form-control " Email"
+                                                placeholder="Tìm kiếm hoặc chọn" />
+                                        </div>
+                                        <div class="input-group mb-1 mb-sm-1 mb-md-0">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">Đến</div>
+                                            </div>
+                                            <input type="password" class="form-control" id="Password"
+                                                placeholder="Tìm kiếm hoặc chọn" />
+                                        </div>
+
+                                        <button type="submit" class="btn btn-warning text-white btnChiPhi">
+                                            <a class="text-white" href="" target="_blank">
+                                                Tra cứu
+                                            </a>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-12 table-responsive">
+                                    <table class="table text-white table-hover tableChiPhi text-center">
+                                        <thead>
+                                            <tr class="d-flex">
+                                                <th class="col col-sm-12 col-md-1">#</th>
+                                                <th class="col col-sm-12 col-md-7"></th>
+                                                <th class="col col-sm-12 col-md-2">Giao trong buổi sáng</th>
+                                                <th class="col col-sm-12 col-md-2">Giao trong ngày</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label='#' class="col col-sm-12 col-md-1">1</td>
+                                                <td data-label='Tên dịch vụ' class="col col-sm-12 col-md-7">Mark</td>
+                                                <td data-label='Giao trong buổi sáng' class="col col-sm-12 col-md-2">
+                                                    Otto</td>
+                                                <td data-label='Giao trong ngày' class="col col-sm-12 col-md-2">@mdo
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label='#' class="col col-sm-12 col-md-1">1</td>
+                                                <td data-label='Tên dịch vụ' class="col col-sm-12 col-md-7">Mark</td>
+                                                <td data-label='Giao trong buổi sáng' class="col col-sm-12 col-md-2">
+                                                    Otto</td>
+                                                <td data-label='Giao trong ngày' class="col col-sm-12 col-md-2">@mdo
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- <img class=' img-fluid' src="assets/img/fee/uoctinhgia.png" /> -->
+
                     <div class="tab-pane fade" id="tabs_2_2" role="tabpanel" aria-labelledby="profile-tab">
-                        <img class='img-fluid' src="assets/img/fee/gialientinh.png" />
+                        <div class="container bg-dark-success">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <form class="form-inline my-3 d-flex justify-content-lg-between">
+
+                                        <div class="input-group mb-1 mb-sm-1  mb-md-0">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">Từ</div>
+                                            </div>
+                                            <input type="email" class="form-control " Email"
+                                                placeholder="Tìm kiếm hoặc chọn" />
+                                        </div>
+                                        <div class="input-group mb-1 mb-sm-1 mb-md-0">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text">Đến</div>
+                                            </div>
+                                            <input type="password" class="form-control" id="Password"
+                                                placeholder="Tìm kiếm hoặc chọn" />
+                                        </div>
+
+                                        <button type="submit" class="btn btn-warning text-white btnChiPhi">
+                                            <a class="text-white" href="" target="_blank">
+                                                Tra cứu
+                                            </a>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-md-12 table-responsive">
+                                    <table class="table text-white table-hover tableChiPhi text-center">
+                                        <thead>
+                                            <tr class="d-flex">
+                                                <th class="col col-sm-12 col-md-1">#</th>
+                                                <th class="col col-sm-12 col-md-7"></th>
+                                                <th class="col col-sm-12 col-md-2">Giao trong buổi sáng</th>
+                                                <th class="col col-sm-12 col-md-2">Giao trong ngày</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label='#' class="col col-sm-12 col-md-1">1</td>
+                                                <td data-label='Tên dịch vụ' class="col col-sm-12 col-md-7">Mark</td>
+                                                <td data-label='Giao trong buổi sáng' class="col col-sm-12 col-md-2">
+                                                    Otto</td>
+                                                <td data-label='Giao trong ngày' class="col col-sm-12 col-md-2">@mdo
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label='#' class="col col-sm-12 col-md-1">1</td>
+                                                <td data-label='Tên dịch vụ' class="col col-sm-12 col-md-7">Mark</td>
+                                                <td data-label='Giao trong buổi sáng' class="col col-sm-12 col-md-2">
+                                                    Otto</td>
+                                                <td data-label='Giao trong ngày' class="col col-sm-12 col-md-2">@mdo
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <img class='img-fluid' src="assets/img/fee/gialientinh.png" /> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<style>
+    @media (max-width: 576px) {
+        .btnChiPhi {
+            width: 100%;
+        }
+    }
+
+
+    .tableChiPhi thead th {
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .tableChiPhi thead th tr {
+        display: flex;
+    }
+
+    .tableChiPhi tbody tr {
+        display: flex;
+    }
+
+    @media (max-width: 576px) {
+        .tableChiPhi thead {
+            display: none;
+        }
+
+        .tableChiPhi tbody tr {
+            display: block;
+            margin-bottom: 0.625em;
+            background-color: black;
+        }
+
+        .tableChiPhi tbody tr td {
+            display: block;
+            text-align: left;
+        }
+
+        .tableChiPhi tbody tr td::before {
+            content: attr(data-label) ": ";
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+</style>
